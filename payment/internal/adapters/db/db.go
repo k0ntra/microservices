@@ -41,11 +41,11 @@ func (a Adapter) Save(payment *domain.Payment) error {
 		CustomerID: payment.CustomerID,
 		Status:     payment.Status,
 		OrderID:    payment.OrderId,
-		TotalPrice: payment.TotlaPrice,
+		TotalPrice: payment.TotalPrice,
 	}
 	res := a.db.Create(&orderModel)
 	if res.Error == nil {
-		payment.ID = int64(orderMode.ID)
+		payment.ID = int64(orderModel.ID)
 	}
 	return res.Error
 }

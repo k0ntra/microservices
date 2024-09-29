@@ -43,7 +43,7 @@ func (a Adapter) Run() {
 	}
 
 	log.Printf("starting payment service on port %d ...", a.port)
-	if err != grpcServer.Serve(listen); err != nil {
+	if err := grpcServer.Serve(listen); err != nil {
 		log.Fatalf("failed to serve grpc on port %d", a.port)
 	}
 }
