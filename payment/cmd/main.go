@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/k0ntra/microservicess/payment/config"
-	"github.com/k0ntra/microservicess/payment/internal/adapters/db"
-	"github.com/k0ntra/microservicess/payment/internal/adapters/grpc"
-	"github.com/k0ntra/microservicess/payment/internal/application/core/api"
+	"github.com/k0ntra/microservices/payment/config"
+	"github.com/k0ntra/microservices/payment/internal/adapters/db"
+	"github.com/k0ntra/microservices/payment/internal/adapters/grpc"
+	"github.com/k0ntra/microservices/payment/internal/application/core/api"
 
 	log "github.com/sirupsen/logrus"
 )

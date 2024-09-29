@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/k0ntra/microservices-proto/payment"
+	"github.com/k0ntra/microservices-proto/golang/payment"
 	"github.com/k0ntra/microservices/payment/internal/application/core/domain"
 
 	log "github.com/sirupsen/logrus"
