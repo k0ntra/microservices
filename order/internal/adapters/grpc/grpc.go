@@ -5,9 +5,11 @@ import (
 
 	"github.com/k0ntra/microservices-proto/golang/order"
 	"github.com/k0ntra/microservices/order/internal/application/core/domain"
+	log "github.com/sirupsen/logrus"
 )
 
 func (a Adapter) Create(ctx context.Context, request *order.CreateOrderRequest) (*order.CreateOrderResponse, error) {
+	log.WithContext(ctx).Info("Creating order...")
 	var orderItems []domain.OrderItem
 	for _, orderItem := range request.OrderItems {
 		orderItems = append(orderItems, domain.OrderItem{

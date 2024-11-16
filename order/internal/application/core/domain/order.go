@@ -1,6 +1,8 @@
 package domain
 
-import "time"
+import (
+	"time"
+)
 
 type Order struct {
 	ID         int64       `json:"id"`
@@ -11,9 +13,9 @@ type Order struct {
 }
 
 type OrderItem struct {
-	ProductCode string
-	UnitPrice   float32
-	Quantity    int32
+	ProductCode string  `json:"product_code"`
+	UnitPrice   float32 `json:"unit_price"`
+	Quantity    int32   `json:"quantity"`
 }
 
 func NewOrder(customerId int64, orderItems []OrderItem) Order {

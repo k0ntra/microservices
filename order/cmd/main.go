@@ -1,7 +1,7 @@
 package main
 
 import (
-	"log"
+	log "github.com/sirupsen/logrus"
 
 	"github.com/k0ntra/microservices/order/config"
 	"github.com/k0ntra/microservices/order/internal/adapters/db"
